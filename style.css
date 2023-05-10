@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --upperNav-color: #4A0000;
+    --headingTxt-color: #059851;
+    --atcButton-color: #005cb9;
+    --lightFont-color: #f2f2f2;
+    --darkFont-color: #0d0d0d;
+    --font: 'Inter', sans-serif;
+    --current-page: #FF2121;
+}
+
+body {
+    font-family: var(--font);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ================= PAGE DETAILS */
+.page__details {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--upperNav-color);
+    padding: .5rem
+
+}
+
+.page__details p {
+    color: var(--lightFont-color);
+}
+
+.page__details p:first-child {
+    margin-right: 1.5rem;
+}
+
+.page__details p:nth-child(2) {
+    margin-right: auto;
+}
+
+.page__details a {
+    border-bottom: 1px solid #f2f2f2;
+    margin-left: 1rem;
+    color: var(--lightFont-color);
+}
+
+.page__socials {
+    margin-right: 1rem;
+}
+
+.page__socials img {
+    width: 80px;     
+}
+
+/* ================= END OF PAGE DETAILS */
+
+/* ================= NAVBAR */
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.nav__wrapper h1 {  
+    color: var(--headingTxt-color);
+    font-size: 3rem;
+}
+
+.nav__wrapper .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__wrapper .links .link {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.nav__wrapper .links .link a {
+    color: var(--darkFont-color)
+}
+
+.current__page {
+    border-radius: 40px;
+    color: var(--lightFont-color) !important;
+    background-color: var(--current-page);
+    padding: 1rem;
+}   
+
+
+/* ============ NAVIGATION ICONS */
+.fa-solid {
+    font-size: 1.4rem;
+    margin: 0 .5rem;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+/* ============ END OF NAVIGATION ICONS */
