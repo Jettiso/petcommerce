@@ -1,117 +1,255 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap");
 
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-    --upperNav-color: #4A0000;
-    --headingTxt-color: #059851;
-    --atcButton-color: #005cb9;
-    --lightFont-color: #f2f2f2;
-    --darkFont-color: #0d0d0d;
-    --font: 'Inter', sans-serif;
-    --current-page: #FF2121;
+	--upperNav-color: #4a0000;
+	--headingTxt-color: #059851;
+	--atcButton-color: #005cb9;
+	--lightFont-color: #f2f2f2;
+	--darkFont-color: #0d0d0d;
+	--font: "Inter", sans-serif;
+	--current-page: #ff2121;
+	--page-color: #dddddd;
+	--footer-color: #1d242d;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
 body {
-    font-family: var(--font);
-
+	font-family: var(--font);
+	background-color: var(--page-color);
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 /* ================= PAGE DETAILS */
 .page__details {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: var(--upperNav-color);
-    padding: .5rem
-
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: var(--upperNav-color);
+	padding: 0.5rem;
 }
 
 .page__details p {
-    color: var(--lightFont-color);
+	color: var(--lightFont-color);
 }
 
 .page__details p:first-child {
-    margin-right: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .page__details p:nth-child(2) {
-    margin-right: auto;
+	margin-right: auto;
 }
 
 .page__details a {
-    border-bottom: 1px solid #f2f2f2;
-    margin-left: 1rem;
-    color: var(--lightFont-color);
+	border-bottom: 1px solid #f2f2f2;
+	margin-left: 1rem;
+	color: var(--lightFont-color);
 }
 
 .page__socials {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .page__socials img {
-    width: 80px;     
+	width: 80px;
 }
 
 /* ================= END OF PAGE DETAILS */
 
 /* ================= NAVBAR */
 .nav__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1.5rem;
+	background-color: var(--lightFont-color);
 }
 
-.nav__wrapper h1 {  
-    color: var(--headingTxt-color);
-    font-size: 3rem;
+.nav__wrapper h1 {
+	color: var(--headingTxt-color);
+	font-size: 3rem;
 }
 
 .nav__wrapper .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav__wrapper .links .link {
-    margin: 0 1rem;
-    font-size: 1.2rem;
+	margin: 0 1rem;
+	font-size: 1.2rem;
 }
 
 .nav__wrapper .links .link a {
-    color: var(--darkFont-color)
+	color: var(--darkFont-color);
 }
 
 .current__page {
-    border-radius: 40px;
-    color: var(--lightFont-color) !important;
-    background-color: var(--current-page);
-    padding: 1rem;
-}   
+	border-radius: 40px;
+	color: var(--lightFont-color) !important;
+	background-color: var(--current-page);
+	padding: 1rem;
+}
 
+/* ============= HOMEPAGE HEADER */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+header p {
+    max-width: 79ch;
+    margin-bottom: 1rem;
+}
+
+header .header__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 3;
+    padding: 1rem;
+}
+
+header .header__heading {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+header .header__heading h1 {
+	margin-right: 0.5rem;
+	font-weight: 800;
+    color: var(--headingTxt-color);
+    font-size: 2.5rem;
+}
+
+header .header__heading span {
+    font-size: 2rem;
+    color: var(--headingTxt-color);
+}
+
+.banner__container {
+    width: 600px;
+    flex: 1;
+}
+
+.banner__container img {
+    width: 100%;
+}
+/* ============= END OF HOMEPAGE HEADER */
+
+/* ============= HOMEPAGE PET CATEGORIES */
+section.homePetCategories__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--lightFont-color);
+}
+
+section.homePetCategories__container h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: var(--headingTxt-color);
+}
+
+div.homePetCategories__category {
+    display: flex;
+    gap: 3rem;
+}
+
+div.homePetCategories__pet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--headingTxt-color);
+}
+/* ============= END OF HOMEPAGE PET CATEGORIES */
+
+/* ============= HOMEPAGE BEST SELLER PRODUCTS */
+
+section.homeBestSeller__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.homeBestSeller__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+section.homeBestSeller__container h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--headingTxt-color);
+}
+
+section.homeBestSeller__container p {
+    max-width: 79ch;
+}
+
+div.homeBestSeller__products {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+div.homeBestSeller__product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--lightFont-color);
+    margin: 1rem;
+}
+
+div.homeBestSeller__product p {
+    max-width: 20ch;
+    margin: 1rem;
+}
+/* ============= END OF HOMEPAGE BEST SELLER PRODUCTS */
 
 /* ============ NAVIGATION ICONS */
 .fa-solid {
-    font-size: 1.4rem;
-    margin: 0 .5rem;
+	font-size: 1.4rem;
+	margin: 0 0.5rem;
 }
 
 .fa-solid:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 /* ============ END OF NAVIGATION ICONS */
