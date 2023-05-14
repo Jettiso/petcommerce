@@ -17,7 +17,9 @@
 	--font: "Inter", sans-serif;
 	--current-page: #ff2121;
 	--page-color: #dddddd;
-	--footer-color: #1d242d;
+	--footer-color: #212934;
+    --ownerCredit-color: #1d242d;
+    --abtandcont-color: #D9D9D9;
 }
 
 img {
@@ -253,3 +255,208 @@ div.homeBestSeller__product p {
 }
 
 /* ============ END OF NAVIGATION ICONS */
+
+/* ============ FOOTER */
+div.footerLinks__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    background-color: var(--footer-color);
+}
+
+div.footerLinks__container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lightFont-color);
+
+}
+
+div.footerLinks__container div p a {
+    color: var(--lightFont-color);
+}
+
+div.footerLinks__container div > h2 {
+    color: var(--headingTxt-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+div.footerLinks__container div > span, p {
+    margin-bottom: 1rem;
+}
+
+div.footerSocials__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--footer-color);
+    padding: 1.5rem 3rem;
+}
+
+div.footerSocials__container h2 {
+    color: red;
+    font-weight: 400;
+}
+
+div.footerSocials__container div.footer__icons i {
+    margin-right: 1rem;
+    color: var(--lightFont-color);
+    font-size: 1.5rem;
+}
+/* ============ END OF FOOTER */
+
+/* ============ OWNER */
+.owners {
+    background-color: var(--ownerCredit-color);
+    color: var(--lightFont-color);
+    padding: 1rem;
+}
+
+.owners h3 {
+    text-align: center;
+    font-weight: 200;
+}
+/* ============ END OF OWNER */
+
+/* ============ DRY AND WET FOODS */
+div.wetFood__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+div.dryFood__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+div.treats__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+div.food__product {
+    max-width: 290px;
+    background-color: white;
+    padding: 1rem;
+}
+
+div.food__product button {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--lightFont-color);
+    background-color: var(--atcButton-color);
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ============ END OF DRY AND WET FOODS */
+
+/* =========== PRODUCT CATEGORY PAGE */
+
+div.category__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+div.category__container h2{
+    text-align: center;
+    color: var(--headingTxt-color);
+}
+
+/* =========== END OF PRODUCT CATEGORY PAGE */
+
+/* =========== ABOUT US PAGE */
+main.about__main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.about {
+    width: 90%;
+    text-align: center;
+    background-color: var(--abtandcont-color);
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.about h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--headingTxt-color);
+}
+
+div.about p {
+    max-width: 70ch;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+/* =========== END OF ABOUT US PAGE */
+
+/* =========== CONTACT PAGE */
+main.main__contact {
+    padding: 1rem;
+}
+
+div.contact {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--abtandcont-color);
+    padding: 2rem;
+}
+
+div.contact h1 {
+    text-align: center;
+    color: var(--headingTxt-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+div.contact ul {
+    margin-bottom: 1.5rem;
+}
+
+div.contact li {
+    list-style-type: disc;
+    font-size: 1.3rem;
+}
+
+div.contact p {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+}
+
+div.contact h2 {
+    margin-bottom: 1.5rem;
+}
+/* =========== END OF CONTACT PAGE */
+
+/* ============== MOBILE VIEW */
+    @media screen and (max-width: 600px){
+        
+    }
+/* ============== MOBILE VIEW */
