@@ -28,6 +28,7 @@ img {
 }
 
 body {
+    position: relative;
 	font-family: var(--font);
 	background-color: var(--page-color);
 }
@@ -156,7 +157,6 @@ header .header__heading span {
 }
 
 .banner__container {
-    width: 600px;
     flex: 1;
 }
 
@@ -274,6 +274,15 @@ div.footerLinks__container div {
 
 div.footerLinks__container div p a {
     color: var(--lightFont-color);
+    text-align: center;
+}
+
+div.footerLinks__container div span {
+    text-align: center;
+}
+div.footerLinks__container div p a {
+    color: var(--lightFont-color);
+    text-align: center;
 }
 
 div.footerLinks__container div > h2 {
@@ -462,9 +471,45 @@ div.contact p {
 div.contact h2 {
     margin-bottom: 1.5rem;
 }
+
+.mobile__nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.mobile__nav.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--lightFont-color);
+    padding: 1rem;
+}
+
+.mobile__nav.open li a{
+    font-size: 2rem;
+    line-height: 4;
+    color: var(--darkFont-color);
+}
+
+.fa-x {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    font-size: 4rem;
+}
+
+.open {
+    display: block;
+}
+
 /* =========== END OF CONTACT PAGE */
 
 /* ============== MOBILE VIEW */
+
+/* Mostly changed the flex direction of desktop flexbox elements */
     @media screen and (max-width: 800px){
         .links .link, .fa-magnifying-glass, .fa-user, .fa-cart-shopping{
             display: none;

@@ -1,7 +1,23 @@
+// SELECTS FOOD CONTAINERS 
 const wetFoodContainer = document.querySelector(".wetFood__container");
 const dryFoodContainer = document.querySelector(".dryFood__container");
 const treatsContainer = document.querySelector(".treats__container");
+// SELECTS MOBILE NAVIGATION
+const mobileNav = document.querySelector(".mobile__nav");
+const mobileNavBtn = document.querySelector(".fa-bars");
+const clostMobileNav = document.querySelector(".fa-x");
 
+
+// TOGGLE BUTTONS FOR THE MOBILE NAVBAR
+mobileNavBtn.addEventListener("click", () => {
+	mobileNav.classList.add("open");
+});
+
+clostMobileNav.addEventListener("click", () => {
+	mobileNav.classList.remove("open");
+});
+
+// MANUAL ARRAY DATA
 const wetFoodItem = [
 	{
 		img: "./imgs/wetdogfood.jpg",
@@ -44,7 +60,7 @@ const wetFoodItem = [
 		price: 40.0,
 	},
 ];
-
+// MANUAL ARRAY DATA
 const dryFoodItem = [
 	{
 		img: "./imgs/drydogfood.jpg",
@@ -88,9 +104,9 @@ const dryFoodItem = [
 	},
 ];
 
-
-
+// FUNCTIONS TO RENDER THE ELEMENTS FROM DATA PROVIDED
 const renderProducts = () => {
+		// RENDER WET FOOD PRODUCT ELEMENT
 	let wetFoodRender = wetFoodItem.map((product) => {
 		return ` <div class="food__product">
         <div class="img__container">
@@ -101,7 +117,7 @@ const renderProducts = () => {
         <button>Add to cart</button>
     </div>`;
 	});
-
+	// RENDER DRY FOOD PRODUCT ELEMENT
 	let dryFoodRender = dryFoodItem.map((product) => {
 		return ` <div class="food__product">
         <div class="img__container">
@@ -115,12 +131,10 @@ const renderProducts = () => {
 
 	dryFoodRender = dryFoodRender.join("");
 	wetFoodRender = wetFoodRender.join("");
-
+	// PUTTING THE RENDERED ELEMENT TO THE CONTAINER
 	dryFoodContainer.innerHTML = dryFoodRender;
 	wetFoodContainer.innerHTML = wetFoodRender;
 };
-
-
 
 renderProducts();
 renderTreats();

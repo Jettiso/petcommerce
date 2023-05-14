@@ -1,4 +1,16 @@
-const treatContainer = document.querySelector(".treats__container");
+const treatsContainer = document.querySelector(".treats__container");
+const mobileNav = document.querySelector('.mobile__nav');
+const mobileNavBtn = document.querySelector('.fa-bars');
+const clostMobileNav = document.querySelector('.fa-x');
+
+mobileNavBtn.addEventListener('click', () => {
+    mobileNav.classList.add('open');
+})
+
+
+clostMobileNav.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+})
 
 const treatsItems = [
 	{
@@ -44,7 +56,6 @@ const treatsItems = [
 ];
 
 const renderPetTreats = () => {
-    const renderTreats = () => {
         let treatsRender = treatsItems.map((product) => {
             return ` <div class="food__product">
             <div class="img__container">
@@ -58,7 +69,6 @@ const renderPetTreats = () => {
     
         treatsRender = treatsRender.join("");
         treatsContainer.innerHTML = treatsRender;
-    };
 }
 
 renderPetTreats();

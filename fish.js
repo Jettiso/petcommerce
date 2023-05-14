@@ -1,4 +1,9 @@
 const fishFoodContainer = document.querySelector('.fishFood__container');
+const mobileNav = document.querySelector('.mobile__nav');
+const mobileNavBtn = document.querySelector('.fa-bars');
+const clostMobileNav = document.querySelector('.fa-x');
+
+
 
 const fishFoodItems = [
 	{
@@ -43,6 +48,7 @@ const fishFoodItems = [
 	},
 ];
 
+
 const renderFishFood = () => {
     let fishFoodRender = fishFoodItems.map((product) => {
 		return ` <div class="food__product">
@@ -60,3 +66,13 @@ const renderFishFood = () => {
 }
 
 renderFishFood();
+
+
+mobileNavBtn.addEventListener('click', () => {
+    mobileNav.classList.add('open');
+})
+
+
+clostMobileNav.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+})
