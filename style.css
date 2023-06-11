@@ -9,26 +9,26 @@
 }
 
 :root {
-	--upperNav-color: #4a0000;
+	--upperNav-color: #0081c9;
 	--headingTxt-color: #059851;
-	--atcButton-color: #005cb9;
+	--atcButton-color: #00bf63;
 	--lightFont-color: #f2f2f2;
 	--darkFont-color: #0d0d0d;
 	--font: "Inter", sans-serif;
-	--current-page: #ff2121;
+	--current-page: #ffd80c;
 	--page-color: #dddddd;
-	--footer-color: #212934;
-    --ownerCredit-color: #1d242d;
-    --abtandcont-color: #D9D9D9;
+	--footer-color: #00456b;
+	--ownerCredit-color: #002d47;
+	--abtandcont-color: #d9d9d9;
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
 
 body {
-    position: relative;
+	position: relative;
 	font-family: var(--font);
 	background-color: var(--page-color);
 }
@@ -41,41 +41,9 @@ li {
 	list-style-type: none;
 }
 
-/* ================= PAGE DETAILS */
-.page__details {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	background-color: var(--upperNav-color);
-	padding: 0.5rem;
+.nav__icons .fa-bars {
+    display: none;
 }
-
-.page__details p {
-	color: var(--lightFont-color);
-}
-
-.page__details p:first-child {
-	margin-right: 1.5rem;
-}
-
-.page__details p:nth-child(2) {
-	margin-right: auto;
-}
-
-.page__details a {
-	border-bottom: 1px solid #f2f2f2;
-	margin-left: 1rem;
-	color: var(--lightFont-color);
-}
-
-.page__socials {
-	margin-right: 1rem;
-}
-
-.page__socials img {
-	width: 80px;
-}
-
 /* ================= END OF PAGE DETAILS */
 
 /* ================= NAVBAR */
@@ -85,7 +53,7 @@ li {
 	justify-content: space-between;
 	width: 100%;
 	padding: 1.5rem;
-	background-color: var(--lightFont-color);
+	background-color: var(--upperNav-color);
 }
 
 .nav__wrapper h1 {
@@ -105,12 +73,12 @@ li {
 }
 
 .nav__wrapper .links .link a {
-	color: var(--darkFont-color);
+	color: var(--lightFont-color);
 }
 
 .current__page {
 	border-radius: 40px;
-	color: var(--lightFont-color) !important;
+	color: var(--darkFont-color) !important;
 	background-color: var(--current-page);
 	padding: 1rem;
 }
@@ -124,123 +92,123 @@ header {
 }
 
 header p {
-    max-width: 79ch;
-    margin-bottom: 1rem;
+	max-width: 79ch;
+	margin-bottom: 1rem;
 }
 
 header .header__description {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 3;
-    padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex: 3;
+	padding: 1rem;
 }
 
 header .header__heading {
 	display: flex;
 	align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 header .header__heading h1 {
 	margin-right: 0.5rem;
 	font-weight: 800;
-    color: var(--headingTxt-color);
-    font-size: 2.5rem;
+	color: var(--headingTxt-color);
+	font-size: 2.5rem;
 }
 
 header .header__heading span {
-    font-size: 2rem;
-    color: var(--headingTxt-color);
+	font-size: 2rem;
+	color: var(--headingTxt-color);
 }
 
 .banner__container {
-    flex: 1;
+	flex: 1;
 }
 
 .banner__container img {
-    width: 100%;
+	width: 100%;
 }
 /* ============= END OF HOMEPAGE HEADER */
 
 /* ============= HOMEPAGE PET CATEGORIES */
 section.homePetCategories__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 1.5rem;
-    background-color: var(--lightFont-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 1.5rem;
+	background-color: var(--lightFont-color);
 }
 
 section.homePetCategories__container h1 {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-bottom: 1rem;
-    color: var(--headingTxt-color);
+	font-size: 2rem;
+	font-weight: 200;
+	margin-bottom: 1rem;
+	color: var(--headingTxt-color);
 }
 
 div.homePetCategories__category {
-    display: flex;
-    gap: 3rem;
+	display: flex;
+	gap: 3rem;
 }
 
 div.homePetCategories__pet {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--headingTxt-color);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: var(--headingTxt-color);
 }
 /* ============= END OF HOMEPAGE PET CATEGORIES */
 
 /* ============= HOMEPAGE BEST SELLER PRODUCTS */
 
 section.homeBestSeller__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 div.homeBestSeller__description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1.5rem;
 }
 
 section.homeBestSeller__container h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: var(--headingTxt-color);
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	color: var(--headingTxt-color);
 }
 
 section.homeBestSeller__container p {
-    max-width: 79ch;
+	max-width: 79ch;
 }
 
 div.homeBestSeller__products {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
 }
 
 div.homeBestSeller__product {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--lightFont-color);
-    margin: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--lightFont-color);
+	margin: 1rem;
 }
 
 div.homeBestSeller__product p {
-    max-width: 20ch;
-    margin: 1rem;
+	max-width: 20ch;
+	margin: 1rem;
 }
 /* ============= END OF HOMEPAGE BEST SELLER PRODUCTS */
 
@@ -248,138 +216,142 @@ div.homeBestSeller__product p {
 .fa-solid {
 	font-size: 1.4rem;
 	margin: 0 0.5rem;
+	color: var(--lightFont-color);
 }
 
 .fa-solid:hover {
 	cursor: pointer;
+	transform: scale(1.5);
+	transition: ease-in-out 150ms;
 }
 
 /* ============ END OF NAVIGATION ICONS */
 
 /* ============ FOOTER */
 div.footerLinks__container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    background-color: var(--footer-color);
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+	background-color: var(--footer-color);
 }
 
 div.footerLinks__container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--lightFont-color);
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--lightFont-color);
 }
 
 div.footerLinks__container div p a {
-    color: var(--lightFont-color);
-    text-align: center;
+	color: var(--lightFont-color);
+	text-align: center;
 }
 
 div.footerLinks__container div span {
-    text-align: center;
+	text-align: center;
 }
 div.footerLinks__container div p a {
-    color: var(--lightFont-color);
-    text-align: center;
+	color: var(--lightFont-color);
+	text-align: center;
 }
 
 div.footerLinks__container div > h2 {
-    color: var(--headingTxt-color);
-    text-align: center;
-    margin-bottom: 1rem;
+	color: var(--current-page);
+	text-align: center;
+	margin-bottom: 1rem;
 }
 
-div.footerLinks__container div > span, p {
-    margin-bottom: 1rem;
+div.footerLinks__container div > span,
+p {
+	margin-bottom: 1rem;
 }
 
 div.footerSocials__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--footer-color);
-    padding: 1.5rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--footer-color);
+	padding: 1.5rem 3rem;
 }
 
 div.footerSocials__container h2 {
-    color: red;
-    font-weight: 400;
+	color: red;
+	font-weight: 400;
 }
 
 div.footerSocials__container div.footer__icons i {
-    margin-right: 1rem;
-    color: var(--lightFont-color);
-    font-size: 1.5rem;
+	margin-right: 1rem;
+	color: var(--lightFont-color);
+	font-size: 1.5rem;
 }
 /* ============ END OF FOOTER */
 
 /* ============ OWNER */
 .owners {
-    background-color: var(--ownerCredit-color);
-    color: var(--lightFont-color);
-    padding: 1rem;
+	background-color: var(--ownerCredit-color);
+	color: var(--lightFont-color);
+	padding: 1rem;
 }
 
 .owners h3 {
-    text-align: center;
-    font-weight: 200;
+	text-align: center;
+	font-weight: 200;
 }
 /* ============ END OF OWNER */
 
 /* ============ DRY AND WET FOODS */
 div.wetFood__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 div.dryFood__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 div.treats__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 div.fishFood__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 div.food__product {
-    max-width: 290px;
-    background-color: white;
-    padding: 1rem;
+	max-width: 290px;
+	background-color: white;
+	padding: 1rem;
 }
 
 div.food__product button {
-    width: 100%;
-    outline: none;
-    border: none;
-    color: var(--lightFont-color);
-    background-color: var(--atcButton-color);
-    padding: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: var(--lightFont-color);
+	background-color: var(--atcButton-color);
+	padding: 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border-radius: 45px;
 }
 
 /* ============ END OF DRY AND WET FOODS */
@@ -387,173 +359,185 @@ div.food__product button {
 /* =========== PRODUCT CATEGORY PAGE */
 
 div.category__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem;
 }
 
-div.category__container h2{
-    text-align: center;
-    color: var(--headingTxt-color);
+div.category__container h2 {
+	text-align: center;
+	color: var(--headingTxt-color);
 }
 
 /* =========== END OF PRODUCT CATEGORY PAGE */
 
 /* =========== ABOUT US PAGE */
 main.about__main {
-    width: 100%;
-    display: flex;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 div.about {
-    width: 90%;
-    text-align: center;
-    background-color: var(--abtandcont-color);
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	width: 90%;
+	text-align: center;
+	background-color: var(--abtandcont-color);
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 div.about h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--headingTxt-color);
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	color: #00bbbb;
 }
 
 div.about p {
-    max-width: 70ch;
-    text-align: center;
-    align-self: center;
-    font-size: 1.3rem;
-    line-height: 2;
+	max-width: 70ch;
+	text-align: center;
+	align-self: center;
+	font-size: 1.3rem;
+	line-height: 2;
 }
 /* =========== END OF ABOUT US PAGE */
 
 /* =========== CONTACT PAGE */
 main.main__contact {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 div.contact {
-    width: 90%;
-    margin: 0 auto;
-    background-color: var(--abtandcont-color);
-    padding: 2rem;
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--abtandcont-color);
+	padding: 2rem;
 }
 
 div.contact h1 {
-    text-align: center;
-    color: var(--headingTxt-color);
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
+	text-align: center;
+	color: #00bbbb;
+	margin-bottom: 3rem;
+	font-size: 2.5rem;
 }
 
 div.contact ul {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 div.contact li {
-    list-style-type: disc;
-    font-size: 1.3rem;
+	list-style-type: disc;
+	font-size: 1.3rem;
 }
 
 div.contact p {
-    font-size: 1.3rem;
-    line-height: 2;
-    margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+	line-height: 2;
+	margin-bottom: 1.5rem;
 }
 
 div.contact h2 {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .mobile__nav {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: none;
 }
 
 .mobile__nav.open {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--lightFont-color);
-    padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--lightFont-color);
+	padding: 1rem;
 }
 
-.mobile__nav.open li a{
-    font-size: 2rem;
-    line-height: 4;
-    color: var(--darkFont-color);
+.mobile__nav.open li a {
+	font-size: 2rem;
+	line-height: 4;
+	color: var(--darkFont-color);
 }
 
 .fa-x {
-    position: absolute;
-    top: 80px;
-    right: 60px;
-    font-size: 4rem;
+	position: absolute;
+	top: 80px;
+	right: 60px;
+	font-size: 4rem;
+    color: black;
 }
 
 .open {
-    display: block;
+	display: block;
 }
+
 
 /* =========== END OF CONTACT PAGE */
 
 /* ============== MOBILE VIEW */
 
 /* Mostly changed the flex direction of desktop flexbox elements */
-    @media screen and (max-width: 800px){
-        .links .link, .fa-magnifying-glass, .fa-user, .fa-cart-shopping{
-            display: none;
-        }
-        header {
-            flex-direction: column;
-        }
+@media screen and (max-width: 800px) {
+	.links .link, .fa-magnifying-glass, .fa-user, .fa-cart-shopping {
+		display: none;
+	}
+	header {
+		flex-direction: column;
+	}
 
-        div.homePetCategories__category {
-            flex-direction: column;
-        }
+	div.homePetCategories__category {
+		flex-direction: column;
+	}
 
-        div.homeBestSeller__products {
-            flex-direction: column;
-        }
-
-        div.footerLinks__container {
-            flex-direction: column;
-        }
-
-        div.footerLinks__container div {
-            margin-bottom: 1rem;
-        }
-        
-        div.footerSocials__container {
-            flex-direction: column;
-        }
-
-        .footer__icons {
-            margin-bottom: 1rem;
-        }
-
-        div.category__container {
-            flex-direction: column;
-        }
-
-        div.page__details {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div.page__details p:nth-child(2) {
-            margin: 1rem;
-        }
+    .nav__icons .fa-magnifying-glass, .nav__icons .fa-user,  .nav__icons .fa-cart-shopping {
+        display: none;
     }
+
+    .nav__icons .fa-bars {
+        display: block;
+    }
+
+    .fa-x {
+        color: black;
+    }
+	div.homeBestSeller__products {
+		flex-direction: column;
+	}
+
+	div.footerLinks__container {
+		flex-direction: column;
+	}
+
+	div.footerLinks__container div {
+		margin-bottom: 1rem;
+	}
+
+	div.footerSocials__container {
+		flex-direction: column;
+	}
+
+	.footer__icons {
+		margin-bottom: 1rem;
+	}
+
+	div.category__container {
+		flex-direction: column;
+	}
+
+	div.page__details {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	div.page__details p:nth-child(2) {
+		margin: 1rem;
+	}
+}
 /* ============== MOBILE VIEW */
