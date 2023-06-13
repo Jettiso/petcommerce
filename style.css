@@ -52,7 +52,7 @@ li {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1rem;
 	background-color: var(--upperNav-color);
 }
 
@@ -88,7 +88,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1.5rem;
+	flex-direction: row-reverse;
+	background-color: #ffc93c;
 }
 
 header p {
@@ -101,7 +102,7 @@ header .header__description {
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
-	flex: 3;
+	flex: 1;
 	padding: 1rem;
 }
 
@@ -115,13 +116,15 @@ header .header__heading {
 header .header__heading h1 {
 	margin-right: 0.5rem;
 	font-weight: 800;
-	color: var(--headingTxt-color);
+	color: var(--lightFont-color);
 	font-size: 2.5rem;
+	text-shadow: 2px 2px black;
 }
 
 header .header__heading span {
 	font-size: 2rem;
-	color: var(--headingTxt-color);
+	color: var(--lightFont-color);
+	text-shadow: 2px 2px black;
 }
 
 .banner__container {
@@ -130,6 +133,7 @@ header .header__heading span {
 
 .banner__container img {
 	width: 100%;
+	object-fit: cover;
 }
 /* ============= END OF HOMEPAGE HEADER */
 
@@ -488,7 +492,7 @@ div.contact h2 {
 		display: none;
 	}
 	header {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	div.homePetCategories__category {
